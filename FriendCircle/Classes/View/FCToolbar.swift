@@ -57,6 +57,7 @@ class FCToolbarView: UIView {
     var publishDate = Date() {
         didSet {
             dateLabel.text = publishDate.formatedPublish
+            dateLabel.sizeToFit()
         }
     }
     
@@ -180,7 +181,6 @@ class FCToolbarView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        dateLabel.sizeToFit()
         dateLabel.frame = CGRect(
             x: 0,
             y: (bounds.height - dateLabel.bounds.height) / 2,
