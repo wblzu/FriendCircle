@@ -111,6 +111,7 @@ open class FCView: UIView {
     }
     
     let keyboard = FCReplyInputView(frame: .zero).then {
+        $0.isHidden = true
         $0.layer.borderColor = UIColor.darkGray.cgColor
         $0.layer.borderWidth = 0.2
         $0.backgroundColor = UIColor.groupTableViewBackground
