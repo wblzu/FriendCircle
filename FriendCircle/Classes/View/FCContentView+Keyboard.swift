@@ -165,6 +165,7 @@ extension FCView {
         }
         
         currentReplyView = getCurrentReplyView()
+        keyboard.isHidden = false
         keyboard.textView.text = ""
         keyboard.item = item
         keyboard.index = index
